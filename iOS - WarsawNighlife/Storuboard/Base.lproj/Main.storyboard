@@ -103,11 +103,11 @@
             <objects>
                 <viewController id="JNX-UB-J7m" customClass="ClubsDetailViewController" customModule="iOS___WarsawNighlife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qj5-oK-EnV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-9Z-3Qb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="836"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="QVp-sL-AVT" userLabel="Header view" customClass="DetailsHeaderView" customModule="iOS___WarsawNighlife" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
@@ -226,6 +226,69 @@
                                             <outlet property="descriptionLabel" destination="2Lq-HW-xzO" id="K1b-bf-qRa"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClubDetailSeparatorCell" id="hly-kI-Q3R" customClass="ClubDetailSeparatorCell" customModule="iOS___WarsawNighlife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="466" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hly-kI-Q3R" id="j8w-JR-8EN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="P5Q-1w-gNH">
+                                                    <rect key="frame" x="16" y="14" width="343" height="26.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgB-SX-JtF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVz-A1-nVA" userLabel="Separator">
+                                                            <rect key="frame" x="0.0" y="25.5" width="343" height="1"/>
+                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="9XK-vE-MpK"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="P5Q-1w-gNH" firstAttribute="leading" secondItem="j8w-JR-8EN" secondAttribute="leading" constant="16" id="IhH-2c-tEc"/>
+                                                <constraint firstItem="P5Q-1w-gNH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="j8w-JR-8EN" secondAttribute="top" constant="11" id="SjB-Sj-DhB"/>
+                                                <constraint firstAttribute="trailing" secondItem="P5Q-1w-gNH" secondAttribute="trailing" constant="16" id="gCn-mm-Fj7"/>
+                                                <constraint firstAttribute="bottom" secondItem="P5Q-1w-gNH" secondAttribute="bottom" constant="3" id="ny0-S6-Rco"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="YgB-SX-JtF" id="hSN-rO-Mb8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClubDetailMapCell" rowHeight="215" id="fTe-vp-dWa" customClass="ClubDetailMapCell" customModule="iOS___WarsawNighlife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="510" width="375" height="215"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fTe-vp-dWa" id="Twi-dk-XcM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6T9-ie-5jW">
+                                                    <rect key="frame" x="0.0" y="10" width="375" height="204.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="204.5" id="WiM-Dv-085"/>
+                                                    </constraints>
+                                                </mapView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6T9-ie-5jW" secondAttribute="bottom" id="3CR-6H-7Y1"/>
+                                                <constraint firstItem="6T9-ie-5jW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Twi-dk-XcM" secondAttribute="top" constant="10" id="OTp-uk-8Tt"/>
+                                                <constraint firstItem="6T9-ie-5jW" firstAttribute="leading" secondItem="Twi-dk-XcM" secondAttribute="leading" id="eUt-wG-yJA"/>
+                                                <constraint firstAttribute="trailing" secondItem="6T9-ie-5jW" secondAttribute="trailing" id="uE7-Qq-y7O"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mapView" destination="6T9-ie-5jW" id="8YP-zf-XjG"/>
+                                            <segue destination="BhV-hU-NOp" kind="show" identifier="showMap" id="tHD-EL-AQj"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -238,6 +301,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gDs-1d-TGL"/>
                     </view>
+                    <size key="freeformSize" width="375" height="900"/>
                     <connections>
                         <outlet property="headerView" destination="QVp-sL-AVT" id="wcE-Ye-HwQ"/>
                         <outlet property="tableView" destination="wHH-9Z-3Qb" id="nam-Sc-MVX"/>
@@ -245,7 +309,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g52-tf-xui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1916" y="125.4872563718141"/>
+            <point key="canvasLocation" x="1916" y="125.03748125937032"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="2TH-3j-JqX">
+            <objects>
+                <viewController id="BhV-hU-NOp" customClass="MapViewController" customModule="iOS___WarsawNighlife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nor-wL-SUP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ulr-3E-8OU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ulr-3E-8OU" firstAttribute="leading" secondItem="A0x-N3-HvY" secondAttribute="leading" id="FH5-wL-XJ3"/>
+                            <constraint firstItem="Ulr-3E-8OU" firstAttribute="trailing" secondItem="A0x-N3-HvY" secondAttribute="trailing" id="dfA-Gc-FCe"/>
+                            <constraint firstItem="Ulr-3E-8OU" firstAttribute="bottom" secondItem="A0x-N3-HvY" secondAttribute="bottom" id="z7h-g7-5s9"/>
+                            <constraint firstItem="Ulr-3E-8OU" firstAttribute="top" secondItem="A0x-N3-HvY" secondAttribute="top" id="zo9-5B-BQS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A0x-N3-HvY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Ulr-3E-8OU" id="gbo-tV-ouC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7c-aI-Mco" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2856.8000000000002" y="62.518740629685162"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XCS-Iz-vMi">

@@ -36,7 +36,7 @@ class ClubsDetailViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,12 +60,27 @@ class ClubsDetailViewController: UIViewController, UITableViewDataSource, UITabl
             cell.descriptionLabel.text = clubs.description
             
             return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ClubDetailSeparatorCell.self), for: indexPath) as! ClubDetailSeparatorCell
+            cell.titleLabel.text = "HOW TO GET HERE"
+            
+            return cell
+            
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ClubDetailMapCell.self), for: indexPath) as! ClubDetailMapCell
+              cell.configure(location: clubs.location)
+            return cell
             
         default:
-            fatalError("Failed to instantiate the table view cell for detail view controller")
+            fatalError("Failed to instantiate")
         }
     }
 
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap" {
+            let destinationController = segue.destination as! MapViewController
+            destinationController.clubs = clubs
+        }
+    }
 
 }

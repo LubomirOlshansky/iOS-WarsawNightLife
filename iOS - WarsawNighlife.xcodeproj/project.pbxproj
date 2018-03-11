@@ -29,6 +29,9 @@
 		8D2634DD205387A80073A41B /* ClubsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2634DC205387A80073A41B /* ClubsTableViewController.swift */; };
 		8D2634DF205387FE0073A41B /* ClubsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2634DE205387FE0073A41B /* ClubsTableViewCell.swift */; };
 		8D2634E120538DB10073A41B /* Clubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2634E020538DB10073A41B /* Clubs.swift */; };
+		8D356A0A2054683A005BEBBD /* ClubDetailSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D356A092054683A005BEBBD /* ClubDetailSeparatorCell.swift */; };
+		8D356A0C205468EC005BEBBD /* ClubDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D356A0B205468EC005BEBBD /* ClubDetailMapCell.swift */; };
+		8D356A0E20546D27005BEBBD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D356A0D20546D27005BEBBD /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		8D2634DC205387A80073A41B /* ClubsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsTableViewController.swift; sourceTree = "<group>"; };
 		8D2634DE205387FE0073A41B /* ClubsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsTableViewCell.swift; sourceTree = "<group>"; };
 		8D2634E020538DB10073A41B /* Clubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clubs.swift; sourceTree = "<group>"; };
+		8D356A092054683A005BEBBD /* ClubDetailSeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailSeparatorCell.swift; sourceTree = "<group>"; };
+		8D356A0B205468EC005BEBBD /* ClubDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailMapCell.swift; sourceTree = "<group>"; };
+		8D356A0D20546D27005BEBBD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,8 @@
 				8D126CB020543E85002328D1 /* ClubsDetailIconTextCell.swift */,
 				8D126CB220543FF0002328D1 /* ClubsDetailTextCell.swift */,
 				8D126CA8205437E1002328D1 /* DetailsHeaderView.swift */,
+				8D356A092054683A005BEBBD /* ClubDetailSeparatorCell.swift */,
+				8D356A0B205468EC005BEBBD /* ClubDetailMapCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 			children = (
 				8D2634DC205387A80073A41B /* ClubsTableViewController.swift */,
 				8D126CAA20543922002328D1 /* ClubsDetailViewController.swift */,
+				8D356A0D20546D27005BEBBD /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -246,12 +255,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D356A0E20546D27005BEBBD /* MapViewController.swift in Sources */,
+				8D356A0A2054683A005BEBBD /* ClubDetailSeparatorCell.swift in Sources */,
 				8D2634DF205387FE0073A41B /* ClubsTableViewCell.swift in Sources */,
 				8D126CB120543E85002328D1 /* ClubsDetailIconTextCell.swift in Sources */,
 				8D2634CB205386900073A41B /* AppDelegate.swift in Sources */,
 				8D126CA9205437E1002328D1 /* DetailsHeaderView.swift in Sources */,
 				8D126CAB20543922002328D1 /* ClubsDetailViewController.swift in Sources */,
 				8D126CB320543FF0002328D1 /* ClubsDetailTextCell.swift in Sources */,
+				8D356A0C205468EC005BEBBD /* ClubDetailMapCell.swift in Sources */,
 				8D2634DD205387A80073A41B /* ClubsTableViewController.swift in Sources */,
 				8D2634E120538DB10073A41B /* Clubs.swift in Sources */,
 			);
